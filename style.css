@@ -681,6 +681,7 @@ section.menu-otros {
 /* Estilos de las entradas */
 
 .entradas-acompanantes {
+  width: 100vw;
   background-image: url(img/background-entradas.jpg);
   background-size: cover;
   background-position: center;
