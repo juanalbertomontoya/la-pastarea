@@ -1,4 +1,5 @@
 body {
+  width: 100vw;
   overflow-x: hidden;
 }
 
@@ -1016,6 +1017,10 @@ textarea {
 
   .container {
       width: calc(100% - 40px);
+  }
+
+  .menu-principal {
+    height: 74px;
   }
 
   .boton-ordenar .texto-ordenar {
