@@ -690,7 +690,8 @@ section.menu-otros {
 
 .entradas-acompanantes .contenedor {
   display: grid;
-  grid-template-columns: repeat(2, 100vw);
+  width: 100vw;
+  grid-template-columns: repeat(2, 100%);
   transition: all 1s ease-in-out;
 }
 
@@ -843,6 +844,10 @@ section.contacto {
   width: 100vw;
 }
 
+section.contacto .container {
+  width: 100%;
+}
+
 .contacto h2 {
   font-size: 64px;
   text-align: center;
@@ -889,6 +894,8 @@ section.contacto {
 }
 
 .form-input, .form-label {
+  
+  box-sizing: border-box;
   display: block;
   width: 100%;
   font-size: 20px;
@@ -1157,6 +1164,10 @@ textarea {
 
   .contacto h2 {
     font-size: 44px;
+  }
+
+  .formulario {
+    width: 80%;
   }
   
 
