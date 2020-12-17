@@ -682,6 +682,7 @@ section.menu-otros {
 
 .entradas-acompanantes {
   width: 100vw;
+  overflow-x: hidden;
   background-image: url(img/background-entradas.jpg);
   background-size: cover;
   background-position: center;
