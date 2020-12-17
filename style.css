@@ -3,6 +3,10 @@ body, html {
   overflow-x: hidden;
 }
 
+section {
+  background: red;
+}
+
 .container {
   width: 1170px;
   height: 100%;
