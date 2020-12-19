@@ -683,7 +683,9 @@ section.menu-otros {
 
 .entradas-acompanantes {
   width: 100vw;
+  height: 100%;
   overflow-x: hidden;
+  overflow-y: hidden;
   background-image: url(img/background-entradas.jpg);
   background-size: cover;
   background-position: center;
@@ -693,6 +695,7 @@ section.menu-otros {
 .entradas-acompanantes .contenedor {
   display: grid;
   width: 100vw;
+  height: 100%;
   grid-template-columns: repeat(2, 100%);
   transition: all 1s ease-in-out;
 }
@@ -773,19 +776,26 @@ section.menu-otros {
 
 /* Estilos de los acompañantes */
 
+.entradas-acompanantes .acompanantes {
+  height: 100%;
+}
+
 .acompanantes-platos {
+  height: calc(100% - 200px);
   display: grid;
   grid-template-areas: "plato1 plato2"
                        "tipo-pasta bebidas";
   padding: 100px 0;
-  grid-gap: 30px;
+  column-gap: 30px;
+  row-gap: 30px;
+  align-content: space-around;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 100%;
+  grid-template-rows: repeat(2, auto);
 }
 
 .acomp {
   width: 250px;
-  height: fit-content;
+  height: auto;
   justify-self: center;
 }
 
@@ -1121,7 +1131,7 @@ textarea {
 
   section.menu-restaurante .container {
     display: grid;
-    grid-template-rows: 64px 550px 160px;
+    grid-template-rows: 64px 525px 160px;
   }
 
   section.menu-restaurante > div > h2 {
